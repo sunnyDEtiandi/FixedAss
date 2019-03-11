@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/list_table_tvhead1"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead2"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead3"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead4"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead5"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead6"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/list_table_tvhead7"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead8"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead9"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead10"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead11"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead12"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead13"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead14"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead15"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead16"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead17"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead18"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead19"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead20"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead21"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead22"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead23"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead24"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead25"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead26"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead27"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead28"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead29"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead30"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead31"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead32"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead33"
+        style="@style/ListScanItem"
+        android:layout_width="200dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead34"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/list_table_tvhead35"
+        style="@style/ListScanItem"
+        android:layout_width="200dip"
+        android:padding="10dp"/>
+    <View style="@style/ListSeperator" />
+
+</LinearLayout>

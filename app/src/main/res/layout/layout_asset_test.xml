@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <CheckBox
+            android:id="@+id/selCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:background="@drawable/textview_border"
+        android:layout_marginRight="8dp">
+
+        <LinearLayout
+            android:id="@+id/setAsset1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:gravity="right"
+                android:text="@string/barCode"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/barCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:layout_weight="1.95"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:textColor="@color/textColor"
+                android:text="@string/className"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/assetClass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:layout_weight="1.95"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/setAsset2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setAsset1"
+            android:orientation="horizontal"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:textColor="@color/textColor"
+                android:text="@string/assetName"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/assetName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:layout_weight="1.95"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:textSize="12sp"
+                android:textColor="@color/textColor"
+                android:text="@string/useCompany"/>
+            <EditText
+                android:id="@+id/useCompany"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:focusable="false"
+                android:layout_weight="1.95" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setAsset3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setAsset2"
+            android:orientation="horizontal"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:textSize="12sp"
+                android:textColor="@color/textColor"
+                android:text="@string/useDept"/>
+            <EditText
+                android:id="@+id/useDept"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:focusable="false"
+                android:layout_weight="1.95" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:enabled="false"
+                android:textColor="@color/textColor"
+                android:text="@string/usePeople"/>
+            <EditText
+                android:id="@+id/usePeople"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:focusable="false"
+                android:layout_weight="1.95" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/setAsset4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setAsset3"
+            android:orientation="horizontal"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:enabled="false"
+                android:textColor="@color/textColor"
+                android:text="@string/careMan"/>
+            <EditText
+                android:id="@+id/careMan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:focusable="false"
+                android:layout_weight="1.95" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:enabled="false"
+                android:text="@string/store"
+                android:textColor="@color/textColor" />
+
+            <EditText
+                android:id="@+id/store"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:focusable="false"
+                android:layout_weight="1.95" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setAsset5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setAsset4"
+            android:orientation="horizontal"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:layout_marginBottom="10sp">
+
+            <Button
+                android:id="@+id/writeInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="填写检验信息"/>
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:id="@+id/setAsset5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setAsset4"
+            android:orientation="horizontal"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:enabled="false"
+                android:gravity="right"
+                android:text="维修单位"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/fixCompany"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/down"
+            android:layout_below="@+id/setAsset5"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_marginBottom="5sp"
+            android:src="@android:drawable/arrow_down_float"/>
+
+        <LinearLayout
+            android:id="@+id/setAsset6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/down"
+            android:orientation="horizontal"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:enabled="false"
+                android:gravity="right"
+                android:text="维修人"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/fixPeople"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/setAsset7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setAsset6"
+            android:orientation="horizontal"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:enabled="false"
+                android:gravity="right"
+                android:text="维修电话"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/fixTelephone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:inputType="phone"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/setAsset8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setAsset7"
+            android:orientation="horizontal"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:enabled="false"
+                android:gravity="right"
+                android:text="维修费用"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/fixPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:inputType="number"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/setAsset9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setAsset8"
+            android:orientation="horizontal"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:enabled="false"
+                android:gravity="right"
+                android:text="报修日期"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/fixDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:focusable="false"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/setAsset10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setAsset9"
+            android:orientation="horizontal"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:enabled="false"
+                android:text="故障描述"
+                android:textColor="@color/textColor" />
+
+            <EditText
+                android:id="@+id/fixInfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/setAsset11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setAsset10"
+            android:orientation="horizontal"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:enabled="false"
+                android:gravity="right"
+                android:text="备注信息"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/fixListNote"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/setAsset12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setAsset11"
+            android:orientation="horizontal"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.85"
+                android:enabled="false"
+                android:gravity="right"
+                android:text="维修结果"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+
+            <RadioGroup
+                android:id="@+id/fixState"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_marginLeft="20sp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/agree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="维修成功"
+                    android:checked="true"/>
+                <RadioButton
+                    android:id="@+id/disagree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:text="维修失败"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/up"
+            android:layout_below="@+id/setAsset12"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_marginBottom="5sp"
+            android:src="@android:drawable/arrow_up_float"
+            android:visibility="gone"/>-->
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".count.ListAddActivity">
+
+    <include android:id="@+id/titleLayout" layout="@layout/layout_title"/>
+
+    <TableLayout
+        android:id="@+id/countCon"
+        android:layout_below="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bottomColor"
+        android:padding="8sp">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:layout_marginLeft="15sp"
+                android:gravity="right"
+                android:text="*"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textSize="16sp"
+                android:text="部门名称：" />
+            <EditText
+                android:id="@+id/dept"
+                android:layout_height="wrap_content"
+                android:layout_width="200sp"
+                android:textColor="@color/textColor"
+                android:layout_marginLeft="10sp"
+                android:padding="5dp"
+                android:focusable="false"/>
+            <EditText
+                android:id="@+id/deptUUID"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:layout_marginLeft="15sp"
+                android:gravity="right"
+                android:text="*" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textSize="16sp"
+                android:text="资产分类："/>
+            <EditText
+                android:id="@+id/className"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/textColor"
+                android:layout_marginLeft="10sp"
+                android:padding="5dp"
+                android:focusable="false"/>
+            <EditText
+                android:id="@+id/classCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:textSize="16sp"
+                android:gravity="right"
+                android:text="盘点备注："/>
+            <EditText
+                android:id="@+id/countNote"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:textColor="@color/textColor"
+                android:layout_marginLeft="10sp"
+                android:padding="5dp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15sp"
+                android:gravity="right"
+                android:layout_span="2"
+                android:text="创建人："
+                android:textSize="16sp" />
+            <EditText
+                android:id="@+id/createPeople"
+                android:layout_span="2"
+                android:layout_height="wrap_content"
+                android:layout_width="200sp"
+                android:textColor="@color/textColor"
+                android:layout_marginLeft="10sp"
+                android:focusable="false"
+                android:padding="5dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <HorizontalScrollView
+        android:layout_marginTop="10dp"
+        android:id="@+id/hslist"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/countCon">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+            <include
+                android:id="@+id/include_lvhead"
+                layout="@layout/list_table_addcount" />
+            <fixedass.xiangrong.com.fixedass.view.ListViewEx
+                android:id="@+id/table_lvLedgerList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:listSelector="@drawable/list_item_foucsed"
+                android:cacheColorHint="@android:color/transparent"
+                android:layout_below="@id/include_lvhead" />
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_bottom"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bottomColor">
+
+    <LinearLayout
+        android:id="@+id/ll_home"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/iv_home"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@drawable/index_blue" />
+
+    <TextView
+        android:id="@+id/tv_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/first"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/iv_address"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/summary" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/title_home"
+                android:textColor="@color/textColor"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/ll_friend"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:orientation="vertical"
+             android:paddingTop="5dp"
+             android:paddingBottom="10dp">
+
+             <ImageView
+                 android:id="@+id/iv_friend"
+                 android:layout_width="32dp"
+                 android:layout_height="32dp"
+                 android:src="@drawable/count" />
+
+             <TextView
+                 android:id="@+id/tv_friend"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="3dp"
+                 android:text="@string/title_dashboard"
+                 android:textColor="@color/textColor"
+                 android:textStyle="bold" />
+
+        </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/ll_setting"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:gravity="center"
+            android:orientation="vertical"
+             android:paddingTop="5dp"
+             android:paddingBottom="10dp">
+
+             <ImageView
+                 android:id="@+id/iv_setting"
+                 android:layout_width="32dp"
+                 android:layout_height="32dp"
+                 android:src="@drawable/manager" />
+
+             <TextView
+                 android:id="@+id/tv_setting"
+                android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="3dp"
+                 android:text="@string/title_notifications"
+                 android:textColor="@color/textColor"
+                 android:textStyle="bold" />
+
+        </LinearLayout>
+
+</LinearLayout>

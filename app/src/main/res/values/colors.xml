@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="bottomColor">#f0f0f0</color>
+    <color name="textColor">#000000</color>
+    <color name="gray">#808080</color>
+
+    <color name="list_seperator">#ff000000</color>
+    <color name="list_head">#2b95e1</color>
+    <color name="white">#ffffff</color>
+
+    <color name="red">#ff0000</color>
+
+    <color name="text_lgray">#808080</color>
+    <color name="text_gray">#323232</color>
+
+    <color name="contents_text">#000000</color>
+    <color name="encode_view">#ffffff</color>
+    <color name="possible_result_points">#ffbd21</color>
+    <color name="result_minor_text">#c0c0c0</color>
+    <color name="result_points">#99cc00</color>
+    <color name="result_text">#ffffff</color>
+    <color name="result_view">#000000</color>
+    <color name="status_text">#ffffff</color>
+    <color name="viewfinder_mask">#50000000</color>
+    <color name="react">#ffffff</color>
+    <color name="scanLineColor">#ffffff</color>
+    <color name="defaultColor">#ffffff</color>
+</resources>

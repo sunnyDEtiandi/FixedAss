@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/create_user_dialog_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bottomColor"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/setBorrowDepatment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/query1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:gravity="right"
+            android:textColor="@color/textColor"
+            android:text="@string/borrowDepatment"/>
+        <EditText
+            android:id="@+id/borrowDepatment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_weight="2.5" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/setBorrowDate"
+        android:layout_below="@+id/setBorrowDepatment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/query2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:gravity="right"
+            android:textColor="@color/textColor"
+            android:text="@string/borrowDate"/>
+
+        <EditText
+            android:id="@+id/borrowDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_weight="2.5"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/setBorrowDate1"
+        android:layout_below="@+id/setBorrowDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/query3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:gravity="right"
+            android:textColor="@color/textColor"
+            android:text="@string/to"/>
+
+        <EditText
+            android:id="@+id/borrowDate1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_weight="2.5"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save_pop"
+        android:layout_below="@+id/setBorrowDate1"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:textSize="14dp"
+        android:text="@string/edit" />
+
+    <Button
+        android:id="@+id/btn_cancel_pop"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/setBorrowDate1"
+        android:layout_toRightOf="@+id/btn_save_pop"
+        android:layout_marginTop="5dp"
+        android:textSize="14dp"
+        android:text="取消" />
+</RelativeLayout>

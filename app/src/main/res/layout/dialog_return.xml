@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:text="@string/borrowPeople" />
+        <EditText
+            android:id="@+id/borrowPeople"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/textColor"
+            android:layout_marginLeft="10sp"
+            android:padding="5dp"
+            android:enabled="false"/>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:text="@string/operbillCode_borrow"/>
+        <EditText
+            android:id="@+id/operbillCode"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/textColor"
+            android:layout_marginLeft="10sp"
+            android:padding="5dp"
+            android:enabled="false"/>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:text="@string/borrowDate"/>
+        <EditText
+            android:id="@+id/borrowDate"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/textColor"
+            android:layout_marginLeft="10sp"
+            android:padding="5dp"
+            android:enabled="false"/>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:textSize="16sp"
+            android:text="@string/borrowDays"/>
+        <EditText
+            android:id="@+id/borrowDays"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:layout_marginLeft="10sp"
+            android:padding="5dp"
+            android:enabled="false"/>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_span="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="15sp"
+            android:textSize="16sp"
+            android:text="移动端为全部归还，要想部分归还请登录网站进行操作！"/>
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <!--<View style="@style/ListSeperator" />-->
+
+    <TextView
+        android:id="@+id/tv_list_table_transfer_tvhead1"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/tv_list_table_transfer_tvhead2"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/tv_list_table_transfer_tvhead3"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/tv_list_table_transfer_tvhead4"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/tv_list_table_transfer_tvhead5"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/tv_list_table_transfer_tvhead6"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/tv_list_table_transfer_tvhead7"
+        android:visibility="gone"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+
+    <View style="@style/ListSeperator"  android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_list_table_transfer_tvhead8"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/tv_list_table_transfer_tvhead9"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/tv_list_table_transfer_tvhead10"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+
+    <View style="@style/ListSeperator" />
+
+    <TextView
+        android:id="@+id/tv_list_table_transfer_tvhead11"
+        style="@style/ListScanItem"
+        android:layout_width="150dip"
+        android:padding="10dp"/>
+
+    <!--<View style="@style/ListSeperator" />-->
+
+</LinearLayout>

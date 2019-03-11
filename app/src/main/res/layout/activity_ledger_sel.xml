@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".summary.LedgerSelActivity">
+
+    <include android:id="@+id/titleLayout" layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:id="@+id/setUseDept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleLayout"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:gravity="right"
+            android:textColor="@color/textColor"
+            android:text="@string/useDept"/>
+        <EditText
+            android:id="@+id/useDept"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_weight="3" />
+        <EditText
+            android:id="@+id/useDeptUUID"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_weight="3" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/setClassName"
+        android:layout_below="@+id/setUseDept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:gravity="right"
+            android:textColor="@color/textColor"
+            android:text="@string/className"/>
+        <EditText
+            android:id="@+id/className"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_weight="3" />
+        <EditText
+            android:id="@+id/classCode"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_weight="3" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/setBookDate"
+        android:layout_below="@+id/setClassName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/bookDateText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:gravity="right"
+            android:textColor="@color/textColor"
+            android:text="@string/bookDate"/>
+        <EditText
+            android:id="@+id/bookDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setBookDate2"
+        android:layout_below="@+id/setBookDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:gravity="right"
+            android:textColor="@color/textColor"
+            android:text="@string/to"/>
+        <EditText
+            android:id="@+id/bookDate2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+</RelativeLayout>

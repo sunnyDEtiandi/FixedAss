@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fixedass.xiangrong.com.fixedass">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/maintop"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/zclogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_name" />
+
+
+        <!--资产台账-->
+        <activity
+            android:name=".summary.LedgerActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".summary.LedgerSelActivity" />
+        <activity android:name=".tree.DeptActivity" />
+        <activity android:name=".tree.ClassActivity" />
+
+        <!--资产统计-->
+        <activity
+            android:name=".summary.SumActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".summary.SumSelActivity" />
+        <activity android:name=".tree.ClassSumActivity" />
+        <activity android:name=".tree.DeptSumActivity" />
+        <activity android:name=".summary.SumDetailActivity" />
+
+        <!--资产台账-->
+        <activity android:name=".summary.InquireActivity" />
+        <activity android:name=".summary.InquireDetailActivity" />
+
+        <!--盘点单-->
+        <activity android:name=".count.ListActivity" />
+        <activity android:name=".count.ListDetailActivity" />
+        <!--添加资产-->
+        <activity
+            android:name=".count.ListAddActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".tree.DeptListActivity" />
+        <activity android:name=".tree.ClassListActivity" />
+
+        <!--资产盘点-->
+        <activity android:name=".count.CounttingActivity" />
+        <activity android:name=".count.CountDataActivity"/>
+
+        <!--盘点查询-->
+        <activity android:name=".count.ResultActivity" />
+        <activity android:name=".count.ResultDetailActivity" />
+
+        <!--资产借还-->
+        <activity
+            android:name=".manage.BorrowActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--资产借还详情列表-->
+        <activity android:name=".manage.BorrowListActivity" />
+        <!--资产借还添加-->
+        <activity
+            android:name=".manage.BorrowAddActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--资产借还的借用人-->
+        <activity android:name=".tree.BorrowUserActivity" />
+        <activity
+            android:name=".asset.BorrowAssetActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".manage.BorrowUpdActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".asset.BorrowUpdAssetActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".tree.BorrowUpdUserActivity"/>
+        <activity android:name=".manage.BorrowExamActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".tree.BorrowExamUserActivity"/>
+
+        <!--资产转移-->
+        <activity
+            android:name=".manage.TransferActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--资产转移详情列表-->
+        <activity android:name=".manage.TransferListActivity" />
+        <!--转移单新增-->
+        <activity
+            android:name=".manage.TransferAddActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--资产转移的新用户-->
+        <activity android:name=".tree.TransferUserActivity" />
+        <activity
+            android:name=".asset.TransferAssetActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".manage.TransferUpdActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".asset.TransferUpdAssetActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".tree.TransferUpdUserActivity"/>
+        <!--资产维修-->
+        <activity
+            android:name=".manage.FixActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--资产维修详情列表-->
+        <activity android:name=".manage.FixListActivity" />
+        <!--资产维修新增-->
+        <activity
+            android:name=".manage.FixAddActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".asset.FixAssetActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".manage.FixUpdActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".asset.FixUpdAssetActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!--资产检验-->
+        <activity
+            android:name=".manage.TestActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--资产检验详情列表-->
+        <activity android:name=".manage.TestListActivity" />
+        <!--资产检验新增-->
+        <activity
+            android:name=".manage.TestAddActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".asset.TestAssetActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".manage.TestUpdActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".asset.TestUpdAssetActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!--资产报废-->
+        <activity
+            android:name=".manage.ScrapActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!--资产报废详情列表-->
+        <activity android:name=".manage.ScrapListActivity" />
+        <!--资产报废新增-->
+        <activity
+            android:name=".manage.ScrapAddActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".asset.ScrapAssetActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".manage.ScrapUpdActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name=".asset.ScrapUpdAssetActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+
+        <!--扫描-->
+        <activity android:name=".zxing.android.CaptureActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+    </application>
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 网络通信权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</manifest>

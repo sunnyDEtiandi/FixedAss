@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fixedass.xiangrong.com.fixedass.summary.InquireActivity">
+
+    <include android:id="@+id/titleLayout"
+        layout="@layout/layout_title"/>
+
+    <include android:id="@+id/setBarCode"
+        android:layout_below="@+id/titleLayout"
+        layout="@layout/layout_barcode"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <ListView
+        android:id="@+id/loadAssetData"
+        android:layout_below="@+id/setBarCode"
+        android:layout_width="fill_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:padding="6sp"/>
+
+    <HorizontalScrollView
+        android:layout_marginTop="10dp"
+        android:id="@+id/hs_ledger_hslist"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/loadAssetData">
+        <!--android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <include
+                android:id="@+id/include_ledger_lvhead"
+                layout="@layout/list_table_inquire" />
+
+            <fixedass.xiangrong.com.fixedass.view.ListViewEx
+                android:id="@+id/lv_table_lvLedgerList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:listSelector="@drawable/list_item_foucsed"
+                android:cacheColorHint="@android:color/transparent"
+                android:layout_below="@id/include_ledger_lvhead" />
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

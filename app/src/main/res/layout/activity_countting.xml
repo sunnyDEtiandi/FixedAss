@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fixedass.xiangrong.com.fixedass.count.CounttingActivity">
+
+    <include android:id="@+id/titleLayout"
+        layout="@layout/layout_title"/>
+
+    <LinearLayout
+        android:id="@+id/countbillCodeStr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_above="@+id/countDeptStr"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:enabled="false"
+            android:textColor="#000000"
+            android:text="盘点单号："/>
+
+        <Spinner
+            android:id="@+id/countbillCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/countDeptStr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/countPlaceStr"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:enabled="false"
+            android:textColor="#000000"
+            android:text="盘点单位："/>
+
+        <Spinner
+            android:id="@+id/countDept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/countPlaceStr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="盘点地址："
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/countPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/startCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/countPlaceStr"
+        android:text="开始盘点"/>
+
+</RelativeLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:enabled="false"
+            android:text="维修单位"
+            android:textColor="@color/textColor" />
+        <EditText
+            android:id="@+id/fixCompany"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:enabled="false"
+            android:gravity="right"
+            android:text="维修人"
+            android:textColor="@color/textColor"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/fixPeople"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:inputType="text"
+            android:imeOptions="actionNext"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:enabled="false"
+            android:gravity="right"
+            android:text="维修电话"
+            android:textColor="@color/textColor"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/fixTelephone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:inputType="phone"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:enabled="false"
+            android:gravity="right"
+            android:text="维修费用"
+            android:textColor="@color/textColor"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/fixPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:inputType="number"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:enabled="false"
+            android:gravity="right"
+            android:text="报修日期"
+            android:textColor="@color/textColor"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/fixDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:focusable="false"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:enabled="false"
+            android:text="故障描述"
+            android:textColor="@color/textColor" />
+        <EditText
+            android:id="@+id/fixInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textSize="16sp" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:enabled="false"
+            android:gravity="right"
+            android:text="维修结果"
+            android:textColor="@color/textColor"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/fixState"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_marginLeft="20sp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="维修成功"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/disagree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:text="维修失败"/>
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:enabled="false"
+            android:gravity="right"
+            android:text="备注信息"
+            android:textColor="@color/textColor"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/fixListNote"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textSize="16sp" />
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDECEC"
+    android:orientation="vertical">
+
+    <include android:id="@+id/titleLayout" layout="@layout/layout_title"/>
+
+    <HorizontalScrollView
+        android:id="@+id/hs_query_hslist"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+
+            <include
+                android:id="@+id/include_fix_lvhead"
+                layout="@layout/list_table_fix" />
+
+            <fixedass.xiangrong.com.fixedass.view.ListViewEx
+                android:id="@+id/lv_table_lvFixList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:listSelector="@drawable/list_item_foucsed"
+                android:cacheColorHint="@android:color/transparent"
+                android:layout_below="@id/include_fix_lvhead" />
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+</LinearLayout>

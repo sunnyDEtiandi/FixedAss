@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:text="@string/operbillCode"/>
+        <EditText
+            android:id="@+id/operbillCode"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/textColor"
+            android:layout_marginLeft="10sp"
+            android:padding="5dp"
+            android:enabled="false"/>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:text="@string/examinePeople"/>
+        <EditText
+            android:id="@+id/examinePeople"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/textColor"
+            android:layout_marginLeft="10sp"
+            android:padding="5dp"
+            android:enabled="false"/>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:text="@string/examineDate"/>
+        <EditText
+            android:id="@+id/examineDate"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/textColor"
+            android:layout_marginLeft="10sp"
+            android:padding="5dp"
+            android:enabled="false"/>
+
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:text="@string/ischeck"/>
+        <!--<EditText
+            android:id="@+id/ischeck"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/textColor"
+            android:layout_marginLeft="10sp"
+            android:padding="5dp"
+            android:enabled="false"/>-->
+
+        <RadioGroup
+            android:id="@+id/isAgree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/agree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="同意"/>
+            <RadioButton
+                android:id="@+id/disagree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:text="不同意"
+                android:checked="true"/>
+        </RadioGroup>
+
+    </TableRow>
+    <TableRow android:id="@+id/setThroughNote">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:text="@string/throughNote"/>
+        <EditText
+            android:id="@+id/throughNote"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:padding="5dp"/>
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <CheckBox
+            android:id="@+id/selCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:background="@drawable/textview_border"
+        android:layout_marginRight="8dp">
+
+        <LinearLayout
+            android:id="@+id/setAsset1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:enabled="false"
+                android:gravity="right"
+                android:text="@string/barCode"
+                android:textColor="@color/textColor"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/barCode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:layout_weight="1.95"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:textColor="@color/textColor"
+                android:text="@string/className"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/assetClass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:layout_weight="1.95"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/setAsset2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setAsset1"
+            android:orientation="horizontal"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:textColor="@color/textColor"
+                android:text="@string/assetName"
+                android:textSize="12sp" />
+            <EditText
+                android:id="@+id/assetName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:layout_weight="1.95"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:textSize="12sp"
+                android:textColor="@color/textColor"
+                android:text="@string/useCompany"/>
+            <EditText
+                android:id="@+id/useCompany"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:focusable="false"
+                android:layout_weight="1.95" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/setAsset3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setAsset2"
+            android:orientation="horizontal"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:textSize="12sp"
+                android:textColor="@color/textColor"
+                android:text="@string/useDept"/>
+            <EditText
+                android:id="@+id/useDept"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:focusable="false"
+                android:layout_weight="1.95" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:enabled="false"
+                android:textColor="@color/textColor"
+                android:text="@string/usePeople"/>
+            <EditText
+                android:id="@+id/usePeople"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:focusable="false"
+                android:layout_weight="1.95" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/setAsset4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setAsset3"
+            android:orientation="horizontal"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:enabled="false"
+                android:textColor="@color/textColor"
+                android:text="@string/careMan"/>
+            <EditText
+                android:id="@+id/careMan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:focusable="false"
+                android:layout_weight="1.95" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:enabled="false"
+                android:text="@string/store"
+                android:textColor="@color/textColor" />
+
+            <EditText
+                android:id="@+id/store"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:focusable="false"
+                android:layout_weight="1.95" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

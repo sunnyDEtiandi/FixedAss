@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/bottomColor">
+    <!--<TextView
+        android:id="@+id/setSort"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/textColor"
+        android:background="@drawable/textview_border"
+        android:focusable="true"
+        android:text="@string/sorting"/>
+
+    <TextView
+        android:id="@+id/setEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/textColor"
+        android:background="@drawable/textview_border"
+        android:focusable="true"
+        android:text="@string/edit"/>-->
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+
+        android:background="@drawable/textview_border">
+        <ImageView
+            android:id="@+id/setSort"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/order"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/textview_border">
+        <ImageView
+            android:id="@+id/setEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:clickable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/edit"/>
+    </LinearLayout>
+
+    <!--<ImageView
+        android:id="@+id/setSort"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/textColor"
+        android:background="@drawable/textview_border"
+        android:focusable="true"
+        android:text="@string/sorting"/>-->
+
+
+
+
+
+</LinearLayout>

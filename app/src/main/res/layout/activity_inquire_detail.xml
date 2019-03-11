@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".summary.InquireDetailActivity">
+
+    <include android:id="@+id/titleLayout"
+        layout="@layout/layout_title"/>
+
+    <HorizontalScrollView
+        android:id="@+id/hs_ledger_hslist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleLayout">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+            <include
+                android:id="@+id/include_ledger_lvhead"
+                layout="@layout/list_table_inquire" />
+            <fixedass.xiangrong.com.fixedass.view.ListViewEx
+                android:id="@+id/lv_table_lvLedgerList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:listSelector="@drawable/list_item_foucsed"
+                android:cacheColorHint="@android:color/transparent"
+                android:layout_below="@id/include_ledger_lvhead" />
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hs_ledger_hslist"
+        android:textSize="18sp"
+        android:textColor="@color/textColor"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="详情"/>
+
+    <HorizontalScrollView
+        android:layout_marginTop="10dp"
+        android:id="@+id/hslist"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/detail">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" >
+            <include
+                android:id="@+id/include_lvhead"
+                layout="@layout/list_table_inquire_detail" />
+            <fixedass.xiangrong.com.fixedass.view.ListViewEx
+                android:id="@+id/table_lvLedgerList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:listSelector="@drawable/list_item_foucsed"
+                android:cacheColorHint="@android:color/transparent"
+                android:layout_below="@id/include_lvhead" />
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
